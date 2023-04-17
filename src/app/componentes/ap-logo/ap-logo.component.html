@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark py-0 px-0">
+    <div class="barra w-100 d-flex justify-content-center flex-wrap">
+        <div class="logo d-flex justify-content-center col-sm-3 flex-wrap">
+            <img src="../../../assets/images/APLogo.png" id="logoAP">
+        </div>
+        <div class="container py-0 px-0 mx-0 d-flex teal flex-wrap justify-content-center col-sm-7">
+            <a routerLink="">HOME</a>
+            <a routerLink="/educacion">EDUCACION</a>
+            <a routerLink="/experiencia">EXPERIENCIAS</a>
+            <a routerLink="/skill">SKILLS</a>
+            <a routerLink="/proyecto">PROYECTOS</a>
+        </div>
+        <div class="d-flex mb-2 mb-lg-0 d-flex  col-sm-2 justify-content-end">
+            <button type="button" class="btn borderYtoX " (click)="login()" *ngIf="!isLogged" id="btnLogin"><img src="../../../assets/images/login.png" id="usuario"></button>
+            <button type="button" class="btn d-flex flex-wrap " (click)="onLogout()" *ngIf="isLogged" id="btnLogout"><img src="../../../assets/images/logout.png"></button>
+        </div>
+    </div>
+</nav>

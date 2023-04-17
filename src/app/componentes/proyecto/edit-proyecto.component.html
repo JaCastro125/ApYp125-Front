@@ -1,0 +1,27 @@
+<div class="container vh-100 d-flex flex-column justify-content-center align-items-between" *ngIf="proyecto">
+    <div class="row">
+        <div class="d-flex justify-content-center">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group my-2">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="proyecto.nombre" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="proyecto.descripcion" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="url">URL de Repositorio</label>
+                    <input type="text" class="form-control" id="url" name="url" [(ngModel)]="proyecto.url" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="url">URL de Imagen</label>
+                    <input type="text" class="form-control" id="img" name="img" [(ngModel)]="proyecto.img" required>
+                </div>
+                <button class="btn btn-warning w-100 my-2">
+                    Editar persona
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

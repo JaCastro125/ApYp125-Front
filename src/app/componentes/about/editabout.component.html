@@ -1,0 +1,55 @@
+<div class="container  d-flex flex-column justify-content-center
+    align-items-between" *ngIf="persona">
+    <div class="row">
+        <div class="d-flex justify-content-center">
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form-group my-2">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="persona.nombre" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" [(ngModel)]="persona.apellido" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="edad">Edad: </label>
+                    <input type="number" class="form-control" id="edad" name="edad" [(ngModel)]="persona.edad" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="titulo">Titulo:</label>
+                    <input type="text" class="form-control" id="titulo" name="titulo" [(ngModel)]="persona.titulo" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="email">email</label>
+                    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="persona.email" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="celular">Numero telefonico: </label>
+                    <input type="number" class="form-control" id="celular" name="celular" [(ngModel)]="persona.celular" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" class="form-control" id="ciudad" name="ciudad" [(ngModel)]="persona.ciudad" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="persona.descripcion" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="banner">Banner url: </label>
+                    <input type="text" class="form-control" id="banner" name="banner" [(ngModel)]="persona.banner" required>
+                </div>
+                <div class="form-group py-4">
+                    <label for="img">Imagen</label>
+                    <input type="file" class="form-control" id="img" name="img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" no required>
+                </div>
+                <div class="imagen pt-2 d-flex justify-content-center">
+                    <img [src]="imageS.url" alt="imagen" width="100px">
+                </div>
+                <button class="btn btn-warning w-100 my-2">
+                    Editar persona
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+  crossorigin="anonymous" />
+<div class="container-fluid my-0 mx-0 w-100">
+  <section class="banner">
+    <div>
+      <h2>{{persona.nombre}} {{persona.apellido}}</h2>
+      <h3>{{persona.titulo}}</h3>
+    </div>
+    <img src="{{persona.img}}" alt="image-example" id="imagen-data">
+  </section>
+  <section>
+    <div class="d-flex flex-row justify-content-around flex-wrap">
+      <div class="d-flex flex-column text-center">
+        <h4 class="text-decoration-underline">Informacion personal: </h4>
+        <h5>Edad: {{persona.edad}} años</h5>
+        <h5>Localidad: {{persona.ciudad}}</h5>
+      </div>
+      <div class="d-flex flex-column text-center">
+        <h4 class="text-decoration-underline">Contacto: </h4>
+        <h5>Email: {{persona.email}}</h5>
+        <h5>Celular: {{persona.celular}}</h5>
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-center flex-wrap">
+      <div class="btn_wrap my-2">
+        <span>Redes Sociales</span>
+        <div class="container">
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://api.whatsapp.com/send?phone=543513481225"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com"><i class="fab fa-github"></i> </a>
+        </div>
+      </div>
+      <h4 class="text-decoration-underline ">Descripcion: </h4>
+      <h5 class="text-center">{{persona.descripcion}}</h5>
+    </div>
+    <div class="px-2">
+      <button type="button" class="btn btn-warning w-100 my-2" routerLink="/editacercade/1" *ngIf="isLogged">
+        Editar acerca de mi
+      </button>
+    </div>
+  </section>
+</div>

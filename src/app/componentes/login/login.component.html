@@ -1,0 +1,24 @@
+
+<body class="my-0 d-flex justify-content-center">
+  <div class="container mx-0 my-0 w-100 h-100">
+    <div class="row d-flex align-items-center justify-content-center h-100">
+      <div class="login-box">
+        <h2 class="text-center mb-4">Iniciar Sesión</h2>
+        <form #form="ngForm" (ngSubmit)="onLogin()" novalidate>
+          <div class="user-box">
+            <input type="text" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required />
+            <label class="form-label" for="nombreUsuario">Usuario</label>
+          </div>
+          <div class="user-box">
+            <input type="password" id="password" name="password" class="form-control form-control-lg" [(ngModel)]="password" required/>
+            <label class="form-label" for="password">Password</label>
+          </div>
+          <a class="px-0 py-0">
+            <span></span>
+            <button type="submit" class="btn w-100 ">INGRESAR</button>
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
