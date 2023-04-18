@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&family=Rajdhani:wght@500;600&family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
 section {
   padding: 30px 15%;
@@ -36,14 +36,14 @@ section {
   margin: 0 0 4px;
   font-size: 40px;
   color: rgb(255 255 255 / 96%);
-  font-family: 'IM Fell DW Pica SC', serif;
+  font-family: 'Roboto', serif;
 }
 
 .banner h3 {
   font-weight: 400;
   margin: 0;
   color: rgb(255 255 255 / 57%);
-  font-family: 'Sanchez', serif;
+  font-family: 'Roboto', serif;
 }
 
 h5 {
@@ -51,7 +51,7 @@ h5 {
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #fff;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h4 {
@@ -59,7 +59,7 @@ h4 {
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #fff;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container-fluid {

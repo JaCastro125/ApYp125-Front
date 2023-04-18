@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/apyp-portafolio",
+    "public": "dist/apyp-portfolio",
     "ignore": [
       "firebase.json",
       "**/.*",

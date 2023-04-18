@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&family=Rajdhani:wght@500;600&family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
 footer {
   color: #ffffff;
@@ -19,5 +19,5 @@ footer {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Sanchez', serif;
+  font-family: 'Roboto', serif;
 }
