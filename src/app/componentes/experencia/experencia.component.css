@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&family=Rajdhani:wght@500;600&family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
 .row {
     padding: 20px;
@@ -12,14 +12,14 @@ h1 {
     color: rgb(255, 255, 255);
     font-size: 50px;
     font-weight: 700;
-    font-family: 'IM Fell DW Pica SC', serif;
+    font-family: 'Roboto', serif;
 }
 
 h3 {
     color: rgb(255, 255, 255);
     font-size: 30px;
     font-weight: 700;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .row {
@@ -77,7 +77,7 @@ li {
     font-size: 20px;
     font-weight: 700;
     color: rgb(255, 255, 255);
-    font-family: 'Sanchez', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {

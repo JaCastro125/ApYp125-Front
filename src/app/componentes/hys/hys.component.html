@@ -2,7 +2,8 @@
 <div class="container-fluid rounded my-0 h-100" >
     <div class="row">
         <h1 class="text-center">Habilidades</h1>
-        <button type="button" class="btn btn-warning w-100" routerLink="/newskill" *ngIf="isLogged"> Agregar Skill</button>
+        <button type="button" class="btn btn-warning w-100 my-2" routerLink="/newskill" *ngIf="isLogged"> Agregar
+        </button>
         <div class="row">
             <div class="text-center s col-sm-12 col-md-6 col-lg-4 d-flex flex-column flex-wrap my-2" *ngFor="let skill of skill">
                 <circle-progress

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
 .logo{
     display: flex;
     justify-self: flex-start;
@@ -55,20 +57,20 @@ li{
 }
 
 #btnLogin img{
-    width: 5rem;
-    height: 4.8rem;
-    padding-top: 0.3rem;
+    width: 4rem;
+    height: 3.8rem;
+    margin-right: 2rem;
 }
 
 #btnLogout img{
-    width: 5rem;
-    height: 4.8rem;
-    padding-top: 0.3rem;
+    width: 4rem;
+    height: 3.8rem;
+    margin-right: 2rem;
 }
 
 div.container
 {
-    font-family: Raleway;
+    font-family: Roboto;
     margin: 0 ;
 	padding: 10em 3em;
 	text-align: center;
@@ -79,7 +81,7 @@ div.container a
 {
     color: #FFF;
     text-decoration: none;
-    font: 20px Raleway;
+    font: 20px Roboto;
     margin: 0px 10px;
     padding: 0.5rem;
     position: relative;
