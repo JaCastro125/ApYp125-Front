@@ -1,22 +1,36 @@
-<div class="container  vh-100 d-flex flex-column justify-content-center align-items-between" >
+<div class="container vh-100 d-flex flex-column justify-content-center align-items-between">
     <div class="row">
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-                <div class="form-group my-2">
-                    <label for="nombre">Nueva Skill</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+                <div class="row g-2 py-2">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre"
+                                required>
+                            <label for="floatingInputGrid">Nueva Skill</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="porcentaje" name="porcentaje"
+                                [(ngModel)]="porcentaje" required>
+                            <label for="floatingInputGrid">Porcentaje</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group py-4">
-                    <label for="porcentaje">Porcentaje</label>
-                    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
+                <div class="row g-2 py-2">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="img " name="img" [(ngModel)]="imagen" required>
+                            <label for="floatingInputGrid">Imagen de la tecnologia URL</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group py-4">
-                    <label for="img">URL de Imagen</label>
-                    <input type="text" class="form-control" id="img "name="img" [(ngModel)]="imagen" required>
+                <div class="d-flex justify-content-center py-5">
+                    <button class="btn btn-success w-20 my-2">
+                        Agregar
+                    </button>
                 </div>
-                <button class="btn btn-warning w-100">
-                    Agregar
-                </button>
             </form>
         </div>
     </div>

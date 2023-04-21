@@ -38,11 +38,11 @@ export class EditaboutComponent implements OnInit {
     this.persona.img= this.imageS.url
     this.personaS.update(id, this.persona).subscribe(
       data => {
-        alert('Educacion actualizada con exito')
+        alert('Persona actualizada')
         this.router.navigate([''])
         console.log(this.persona)
       },err => {
-        alert('No se pudo actualizar la educacion')
+        alert('No se pudo actualizar')
       }
     )
   }

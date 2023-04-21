@@ -1,35 +1,33 @@
 <app-header></app-header>
-<div class="container-fluid rounded my-0 h-100">
+<div class="container-fluid rounded my-0 w-100">
     <div class="row">
         <h1 class="text-center">Educacion</h1>
-        <button type="button" class="btn btn-warning w-100 my-2" routerLink="/nuevaedu" *ngIf="isLogged"> Agregar
-        </button>
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-warning w-25 my-2" routerLink="/nuevaedu" *ngIf="isLogged"> Agregar
+            </button>
+        </div>
         <div class="col-lg-1">
         </div>
         <div class="d-flex justify-content-around d-flex flex-wrap">
-            <div class="card col-md-5 d-flex flex-wrap mx-2 my-2 col-xs-12 col-sm-12" *ngFor="let edu of educacion">
+            <div class="card d-flex flex-wrap mx-2 my-2 col-md-5 col-xs-12 col-sm-12" *ngFor="let edu of educacion">
                 <div class="row g-0">
-                    <h3 class="text-center">{{edu.nombreE}}</h3>
-                    <div class="col-md-5">
-                        <img src="{{edu.logoE}}" class="img-fluid .image-c" alt="image-example" id="imagen-data">
+                    <h3>{{edu.nombreE}}</h3>
+                    <div class="col-md-4">
+                        <img src="{{edu.logoE}}" class="img-fluid" alt="image-example" id="imagen-data">
                     </div>
-                    <div class="col-md-7 ">
-                        <div class="card-body ">
+                    <div class="col-md-8">
+                        <div class="card-body">
                             <dl class="card-list d-flex flex-column align-items-center justify-content-center">
-                                <ul class="d-flex align-items-start w-100 flex-column">
-                                    <li>
-                                        <h6>Descripcion: {{edu.descripcionE}}</h6>
-                                    </li>
+                                <ul class="d-flex align-items-start flex-column">
                                     <li>
                                         <h6>Titulo: {{edu.tituloE}}</h6>
                                     </li>
                                     <li>
-                                        <h6>Estado: {{edu.estadoE}}</h6>
+                                        <h6>Periodo de actividad: {{edu.periodoE}}
+                                        </h6>
                                     </li>
                                     <li>
-                                        <h6>Periodo de actividad:
-                                            {{edu.periodoE}}
-                                        </h6>
+                                        <h6>Estado: {{edu.estadoE}}</h6>
                                     </li>
                                 </ul>
                             </dl>

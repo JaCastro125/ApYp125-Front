@@ -3,29 +3,52 @@
   integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
   crossorigin="anonymous" />
 <div class="container-fluid my-0 mx-0 w-100">
-  <section class="banner">
+  <section class="banner d-flex justify-content-center align-conten-center">
     <div>
       <h2>{{persona.nombre}} {{persona.apellido}}</h2>
       <h3>{{persona.titulo}}</h3>
     </div>
-    <img src="{{persona.img}}" alt="image-example" id="imagen-data">
+    <img src="{{persona.img}}" alt="image-perfil" id="imagen-data">
   </section>
   <section>
-    <div class="d-flex flex-row justify-content-around flex-wrap">
-      <div class="d-flex flex-column text-center">
-        <h4 class="text-decoration-underline">Informacion: </h4>
-        <h5>Edad: {{persona.edad}} años</h5>
-        <h5>Localidad: {{persona.ciudad}}</h5>
-      </div>
-      <div class="d-flex flex-column text-center">
-        <h4 class="text-decoration-underline">Contacto: </h4>
-        <h5>Email: {{persona.email}}</h5>
-        <h5>Celular: {{persona.celular}}</h5>
+    <div class="d-flex flex-row justify-content-around">
+      <div class="d-flex cajaHome flex-column text-center">
+        <div class="card">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="info-tab" data-bs-toggle="tab" href="#info" role="tab"
+                  aria-controls="info" aria-selected="true">Informacion</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab"
+                  aria-controls="contact" aria-selected="true">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="description-tab" data-bs-toggle="tab" href="#description" role="tab"
+                  aria-controls="description" aria-disabled="true">Descripcion</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+                <h5>Edad: {{persona.edad}} años</h5>
+                <h5>Localidad: {{persona.ciudad}}</h5>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <h5>Email: {{persona.email}}</h5>
+                <h5>Celular: {{persona.celular}}</h5>
+              </div>
+              <div class="tab-pane fade" id="disabled" role="tabpanel" aria-labelledby="disabled-tab">
+                <h5>{{persona.descripcion}}</h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="d-flex flex-column align-items-center flex-wrap">
-      <h4 class="text-decoration-underline ">Descripcion: </h4>
-      <h5 class="text-center">{{persona.descripcion}}</h5>
       <div class="btn_wrap my-2">
         <span>Redes Sociales</span>
         <div class="container">
@@ -35,8 +58,8 @@
         </div>
       </div>
     </div>
-    <div class="px-2">
-      <button type="button" class="btn btn-warning w-100 my-2" routerLink="/editacercade/1" *ngIf="isLogged">
+    <div class="px-2 d-flex justify-content-center">
+      <button type="button" class="btn btn-success w-20 my-2" routerLink="/editacercade/1" *ngIf="isLogged">
         Editar
       </button>
     </div>

@@ -2,21 +2,23 @@
 <div class="container-fluid rounded my-0 w-100 ">
     <div class="row">
         <h1 class="text-center">Proyecto</h1>
-        <button type="button" class="btn btn-warning w-100 my-2" routerLink="/newproyecto" *ngIf="isLogged"> Agregar
-        </button>
+        <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-warning w-25 my-2" routerLink="/newproyecto" *ngIf="isLogged"> Agregar
+            </button>
+        </div>
         <div class="col-lg-1">
         </div>
         <div class="d-flex justify-content-around d-flex flex-wrap">
-            <div class="card col-md-5 d-flex flex-wrap mx-2 my-2 col-xs-12 col-sm-12" *ngFor="let proyecto of proyecto">
+            <div class="card d-flex flex-wrap mx-2 my-2 col-md-5 col-xs-12 col-sm-12" *ngFor="let proyecto of proyecto">
                 <div class="row g-0">
                     <h3>{{proyecto.nombre}}</h3>
-                    <div class="col-md-5">
-                        <img src="{{proyecto.img}}" class="img-fluid" class="img-fluid .image-c" alt="{{proyecto.nombre}}" id="imagen-data">
+                    <div class="col-md-4">
+                        <img src="{{proyecto.img}}" class="img-fluid" class="img-fluid" alt="{{proyecto.nombre}}" id="imagen-data">
                     </div>
-                    <div class="col-md-7 ">
+                    <div class="col-md-8">
                         <div class="card-body">
-                            <dl class="card-list d-flex flex-column align-items-center">
-                                <ul class="d-flex align-items-start w-100 flex-column">
+                            <dl class="card-list d-flex flex-column align-items-center justify-content-center">
+                                <ul class="d-flex align-items-start flex-column">
                                     <li>
                                         <h6>Descripcion: {{proyecto.descripcion}}</h6>
                                     </li>

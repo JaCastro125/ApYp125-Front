@@ -12,23 +12,22 @@ export class AboutComponent implements OnInit {
 
   persona: persona = null
 
-  constructor(public personaService:PersonaService,private tokenService:TokenService) {
+  constructor(public personaService: PersonaService, private tokenService: TokenService) {
   }
   isLogged = false
   ngOnInit(): void {
     this.cargarPersona()
-    if(this.tokenService.getToken()){
+    if (this.tokenService.getToken()) {
       this.isLogged = true
     }
-    else{
-        this.isLogged = false
+    else {
+      this.isLogged = false
     }
   }
-  
-  cargarPersona(){
+
+  cargarPersona() {
     this.personaService.detail(1).subscribe((data) => {
       this.persona = data
-      console.log(this.persona)
     })
   }
 }

@@ -34,33 +34,27 @@ section {
 .banner h2 {
   white-space: nowrap;
   margin: 0 0 4px;
-  font-size: 40px;
+  font-size: 60px;
   color: rgb(255 255 255 / 96%);
   font-family: 'Roboto', serif;
+  text-shadow: #ee9595;
 }
 
 .banner h3 {
   font-weight: 400;
   margin: 0;
   color: rgb(255 255 255 / 57%);
-  font-family: 'Roboto', serif;
+  font-family: 'Roboto';
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
 }
 
-h4 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-}
 
 .container-fluid {
   -webkit-box-shadow: inset 0px 26px 54px 81px rgba(0, 0, 0, 0.75);
@@ -99,7 +93,7 @@ i {
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 8px 32px 0 rgba(16, 112, 56, 0.205);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 80px;
+  border-radius: 10px;
   padding: 0 18px;
   will-change: transform;
   -webkit-transition: all .2s ease-in-out;
@@ -116,8 +110,8 @@ span {
   z-index: 99;
   width: 240px;
   height: 72px;
-  border-radius: 80px;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  border-radius: 10px;
+  font-family: 'Roboto';
   font-size: 20px;
   text-align: center;
   line-height: 70px;
@@ -174,4 +168,25 @@ span {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.card {
+  opacity: 0.8;
+  background-color: #000000;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  font-family: 'Roboto';
+}
+
+.card-body {
+  color: white;
+}
+
+.nav-link.active {
+  background-color: rgb(10, 82, 22);
+  color: white;
+}
+
+.cajaHome {
+  width: 75vh;
+  padding-bottom: 25px;
 }
