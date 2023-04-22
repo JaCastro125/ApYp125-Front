@@ -5,10 +5,11 @@
 <div class="container-fluid my-0 mx-0 w-100">
   <section class="banner d-flex justify-content-center align-conten-center">
     <div>
-      <h2>{{persona.nombre}} {{persona.apellido}}</h2>
+      <h2>{{persona.apellido}}</h2>
+      <h2>{{persona.nombre}}</h2>
       <h3>{{persona.titulo}}</h3>
     </div>
-    <img src="{{persona.img}}" alt="image-perfil" id="imagen-data">
+    <img src="{{persona.img}}" alt="image-perfil" id="imagen-data" class="fotoPerfil">
   </section>
   <section>
     <div class="d-flex flex-row justify-content-around">
@@ -40,7 +41,7 @@
                 <h5>Email: {{persona.email}}</h5>
                 <h5>Celular: {{persona.celular}}</h5>
               </div>
-              <div class="tab-pane fade" id="disabled" role="tabpanel" aria-labelledby="disabled-tab">
+              <div class="tab-pane fade" id="description" role="tabpanel" aria-labelledby="description-tab">
                 <h5>{{persona.descripcion}}</h5>
               </div>
             </div>

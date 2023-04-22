@@ -13,7 +13,6 @@ export class NeweducacionComponent implements OnInit {
   nombreE: string = ''
   descripcionE: string = ''
   tituloE: string = ''
-  logoE: string = ''
   estadoE: string = ''
   periodoE: string = ''
 
@@ -22,7 +21,7 @@ export class NeweducacionComponent implements OnInit {
   ngOnInit(): void { }
 
   onCreate(): void {
-    const educacion = new Educacion(this.nombreE, this.descripcionE, this.tituloE, this.logoE, this.estadoE, this.periodoE);
+    const educacion = new Educacion(this.nombreE, this.descripcionE, this.tituloE, this.estadoE, this.periodoE);
     this.educacionS.save(educacion).subscribe(
       data => {
         alert('Educacion creada con exito')

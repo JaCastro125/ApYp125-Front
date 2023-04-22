@@ -55,7 +55,6 @@ h5 {
   font-family: 'Roboto';
 }
 
-
 .container-fluid {
   -webkit-box-shadow: inset 0px 26px 54px 81px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 0px 26px 54px 81px rgba(0, 0, 0, 0.75);
@@ -189,4 +188,10 @@ span {
 .cajaHome {
   width: 75vh;
   padding-bottom: 25px;
+}
+
+.fotoPerfil{
+  width: 25vh;
+  border-radius: 50px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }

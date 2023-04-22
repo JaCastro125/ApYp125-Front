@@ -11,9 +11,8 @@
         <div class="d-flex justify-content-around d-flex flex-wrap">
             <div class="card d-flex flex-wrap mx-2 my-2 col-md-5 col-xs-12 col-sm-12" *ngFor="let proyecto of proyecto">
                 <div class="row g-0">
-                    <h3>{{proyecto.nombre}}</h3>
-                    <div class="col-md-4">
-                        <img src="{{proyecto.img}}" class="img-fluid" class="img-fluid" alt="{{proyecto.nombre}}" id="imagen-data">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <h3>{{proyecto.nombre}}</h3>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -23,7 +22,8 @@
                                         <h6>Descripcion: {{proyecto.descripcion}}</h6>
                                     </li>
                                     <li>
-                                        <h6>URL : <a class="text-warning text-bolder" href="{{proyecto.url}}">{{proyecto.url}}</a>
+                                        <h6>URL : <a class="text-warning text-bolder"
+                                                href="{{proyecto.url}}">{{proyecto.url}}</a>
                                         </h6>
                                     </li>
                                 </ul>

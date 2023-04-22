@@ -2,7 +2,6 @@
     <div class="row">
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
-
                 <div class="row g-2 py-2">
                     <div class="col-md">
                         <div class="form-floating">
@@ -32,15 +31,6 @@
                             <input type="text" class="form-control" id="estadoE" name="estadoE" [(ngModel)]="estadoE"
                                 placeholder="Estado" required>
                             <label for="floatingInputGrid">Estado</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-2 py-2">
-                    <div class="col-md">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="logoE" name="logoE" [(ngModel)]="logoE"
-                                placeholder="URL" required>
-                            <label for="floatingInputGrid">Logo de la Institucion</label>
                         </div>
                     </div>
                 </div>

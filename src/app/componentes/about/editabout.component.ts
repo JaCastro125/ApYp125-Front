@@ -30,7 +30,7 @@ export class EditaboutComponent implements OnInit {
   uploadImage($event:any){
     const id = this.activatedRouter.snapshot.params['id']
     const name = "perfil_" + id
-    this.imageS.uploadImage($event,name)
+    this.imageS.uploadImage($event, name)
   }
 
   onUpdate():void{
@@ -40,7 +40,6 @@ export class EditaboutComponent implements OnInit {
       data => {
         alert('Persona actualizada')
         this.router.navigate([''])
-        console.log(this.persona)
       },err => {
         alert('No se pudo actualizar')
       }

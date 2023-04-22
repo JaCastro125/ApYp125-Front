@@ -13,14 +13,13 @@ export class NewProyectoComponent implements OnInit {
   nombreP: string = ''
   descripcionP: string = ''
   urlP: string = ''
-  imgP: string = ''
 
   constructor(private proyectoS: ProyectoService, private router: Router) { }
 
   ngOnInit(): void { }
 
   onCreate() {
-    const proy = new Proyecto(this.nombreP, this.descripcionP, this.urlP, this.imgP)
+    const proy = new Proyecto(this.nombreP, this.descripcionP, this.urlP)
     this.proyectoS.save(proy).subscribe(
       data => {
         alert('Proyecto creado con exito')
