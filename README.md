@@ -5,17 +5,7 @@ Proyecto Portfolio Angular
 Este proyecto consiste en la realización de un Portfolio como medio de aprobación para el curso de Desarrollador Web Full Stack dictado por Argentina Programa. En este repositorio se encuentra el Front-End del proyecto.
 
 Tecnologías usadas:
-• AngularAngular CLI version 14.2.3. 
-
-  _                      _                 ____ _     ___
-    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
-   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
-  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
- /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
-                |___/
-
-
-Angular CLI: 14.1.3
+• AngularAngular CLI version: 14.1.3
 Node: 18.15.0 (Unsupported)
 Package Manager: npm 9.6.1
 OS: win32 x64
