@@ -12,7 +12,7 @@ import { PersonaService } from 'src/app/servicio/persona.service'
 export class EditaboutComponent implements OnInit {
   persona: persona = null
 
-  constructor(private personaS: PersonaService,private activatedRouter:ActivatedRoute,
+  constructor(private personaS: PersonaService,private activatedRouter: ActivatedRoute,
     private router: Router, public imageS:ImageService) { }
 
   ngOnInit(): void {
